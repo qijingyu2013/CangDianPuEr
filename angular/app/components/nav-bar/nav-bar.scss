@@ -1,0 +1,58 @@
+.header-nav-bar {
+  background-color: black;
+  height: 90px;
+}
+
+.logo {
+  background-image: url("/img/阿凡交易所logo.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  //background-attachment: fixed;
+  background-color: transparent;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.navbar-nav {
+  padding-left: 100px;
+}
+
+.dropdown-toggle-custom {
+  color: white;
+  width: 140px;
+  text-align: center;
+  background-color: black;
+}
+
+.navbar-nav > li > a {
+  background-color: black;
+  color: white;
+}
+
+.nav .open > a:focus ,
+.nav .open > a:hover ,
+.nav .open > a:active ,
+.nav .open > a:link ,
+.nav .open > a:visited {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.nav > li > a:focus ,
+.nav > li > a:hover ,
+.nav > li > a:active ,
+.nav > li > a:link ,
+.nav > li > a:visited {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.dropdown-toggle-dashed {
+  border-left: 3px dashed white;
+}
+
+//.user-body-1 {
+//  width: ;
+//}

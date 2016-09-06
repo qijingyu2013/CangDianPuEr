@@ -1,0 +1,15 @@
+.content-page {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 1500px;
+}
+
+.page-title-red {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: red;
+}
+
+.page-title-red > span {
+  border-bottom: 2px solid red;
+}
