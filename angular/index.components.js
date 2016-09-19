@@ -30,31 +30,37 @@ import { NavBarComponent } from './app/components/nav-bar/nav-bar.component'
 /**
  *  index
  */
-import { ImgListComponent } from './app/components/img-list/img-list.component'
-import { VideoListComponent } from './app/components/video-list/video-list.component'
-import { ImgChangeComponent } from './app/components/img-change/img-change.component'
+
+import { ImgCarouselComponent } from './app/components/img-carousel/img-carousel.component'
+import { PagesCyxwComponent } from './app/components/pages-cyxw/pages-cyxw.component'
+import { PagesHyxwComponent } from './app/components/pages-hyxw/pages-hyxw.component'
+
+
+//import { ImgListComponent } from './app/components/img-list/img-list.component'
+//import { VideoListComponent } from './app/components/video-list/video-list.component'
+//import { ImgChangeComponent } from './app/components/img-change/img-change.component'
 /**
  *  page
  */
-import { NavHeaderpageComponent } from './app/components/nav-headerpage/nav-headerpage.component'
-import { PagesAfjjComponent } from './app/components/pages-afjj/pages-afjj.component'
-import { PagesFzlcComponent } from './app/components/pages-fzlc/pages-fzlc.component'
-import { PagesQywhComponent } from './app/components/pages-qywh/pages-qywh.component'
-import { PagesLdghComponent } from './app/components/pages-ldgh/pages-ldgh.component'
-import { PagesAflssybComponent } from './app/components/pages-aflssyb/pages-aflssyb.component'
-import { PagesGdbjComponent } from './app/components/pages-gdbj/pages-gdbj.component'
-import { PagesQyspComponent } from './app/components/pages-qysp/pages-qysp.component'
-import { PagesSspzComponent } from './app/components/pages-sspz/pages-sspz.component'
-import { PagesAfspxxComponent } from './app/components/pages-afspxx/pages-afspxx.component'
-import { PagesHzjgComponent } from './app/components/pages-hzjg/pages-hzjg.component'
-import { PagesDownComponent } from './app/components/pages-down/pages-down.component'
-import { PagesJstdComponent } from './app/components/pages-jstd/pages-jstd.component'
-import { PagesZbsComponent } from './app/components/pages-zbs/pages-zbs.component'
-import { PagesAfysComponent } from './app/components/pages-afys/pages-afys.component'
-import { PagesAfjlComponent } from './app/components/pages-afjl/pages-afjl.component'
-import { PagesJmlcComponent } from './app/components/pages-jmlc/pages-jmlc.component'
-import { PagesZhComponent } from './app/components/pages-zh/pages-zh.component'
-import { PagesAsszfspComponent } from './app/components/pages-asszfsp/pages-asszfsp.component'
+//import { NavHeaderpageComponent } from './app/components/nav-headerpage/nav-headerpage.component'
+//import { PagesAfjjComponent } from './app/components/pages-afjj/pages-afjj.component'
+//import { PagesFzlcComponent } from './app/components/pages-fzlc/pages-fzlc.component'
+//import { PagesQywhComponent } from './app/components/pages-qywh/pages-qywh.component'
+//import { PagesLdghComponent } from './app/components/pages-ldgh/pages-ldgh.component'
+//import { PagesAflssybComponent } from './app/components/pages-aflssyb/pages-aflssyb.component'
+//import { PagesGdbjComponent } from './app/components/pages-gdbj/pages-gdbj.component'
+//import { PagesQyspComponent } from './app/components/pages-qysp/pages-qysp.component'
+//import { PagesSspzComponent } from './app/components/pages-sspz/pages-sspz.component'
+//import { PagesAfspxxComponent } from './app/components/pages-afspxx/pages-afspxx.component'
+//import { PagesHzjgComponent } from './app/components/pages-hzjg/pages-hzjg.component'
+//import { PagesDownComponent } from './app/components/pages-down/pages-down.component'
+//import { PagesJstdComponent } from './app/components/pages-jstd/pages-jstd.component'
+//import { PagesZbsComponent } from './app/components/pages-zbs/pages-zbs.component'
+//import { PagesAfysComponent } from './app/components/pages-afys/pages-afys.component'
+//import { PagesAfjlComponent } from './app/components/pages-afjl/pages-afjl.component'
+//import { PagesJmlcComponent } from './app/components/pages-jmlc/pages-jmlc.component'
+//import { PagesZhComponent } from './app/components/pages-zh/pages-zh.component'
+//import { PagesAsszfspComponent } from './app/components/pages-asszfsp/pages-asszfsp.component'
 
 angular.module('app.components')
     .component('tablesSimple', TablesSimpleComponent)
@@ -89,31 +95,34 @@ angular.module('app.components')
     /**
      *  index
      */
-    .component('imgList', ImgListComponent)
-    .component('videoList', VideoListComponent)
-    .component('imgChange', ImgChangeComponent)
+    .component('imgCarousel', ImgCarouselComponent)
+    .component('pagesCyxw', PagesCyxwComponent)
+    .component('pagesHyxw', PagesHyxwComponent)
+    //.component('imgList', ImgListComponent)
+    //.component('videoList', VideoListComponent)
+    //.component('imgChange', ImgChangeComponent)
     /**
      *  page
      */
-    .component('navHeaderpage', NavHeaderpageComponent)
-    .component('pagesAfjj', PagesAfjjComponent)
-    .component('pagesFzlc', PagesFzlcComponent)
-    .component('pagesQywh', PagesQywhComponent)
-    .component('pagesLdgh', PagesLdghComponent)
-    .component('pagesAflssyb', PagesAflssybComponent)
-    .component('pagesGdbj', PagesGdbjComponent)
-    .component('pagesQysp', PagesQyspComponent)
-    .component('pagesSspz', PagesSspzComponent)
-    .component('pagesAfspxx', PagesAfspxxComponent)
-    .component('pagesHzjg', PagesHzjgComponent)
-    .component('pagesDown', PagesDownComponent)
-    .component('pagesJstd', PagesJstdComponent)
-    .component('pagesZbs', PagesZbsComponent)
-    .component('pagesAfys', PagesAfysComponent)
-    .component('pagesAfjl', PagesAfjlComponent)
-    .component('pagesJmlc', PagesJmlcComponent)
-    .component('pagesZh', PagesZhComponent)
-    .component('pagesAsszfsp', PagesAsszfspComponent)
+    //.component('navHeaderpage', NavHeaderpageComponent)
+    //.component('pagesAfjj', PagesAfjjComponent)
+    //.component('pagesFzlc', PagesFzlcComponent)
+    //.component('pagesQywh', PagesQywhComponent)
+    //.component('pagesLdgh', PagesLdghComponent)
+    //.component('pagesAflssyb', PagesAflssybComponent)
+    //.component('pagesGdbj', PagesGdbjComponent)
+    //.component('pagesQysp', PagesQyspComponent)
+    //.component('pagesSspz', PagesSspzComponent)
+    //.component('pagesAfspxx', PagesAfspxxComponent)
+    //.component('pagesHzjg', PagesHzjgComponent)
+    //.component('pagesDown', PagesDownComponent)
+    //.component('pagesJstd', PagesJstdComponent)
+    //.component('pagesZbs', PagesZbsComponent)
+    //.component('pagesAfys', PagesAfysComponent)
+    //.component('pagesAfjl', PagesAfjlComponent)
+    //.component('pagesJmlc', PagesJmlcComponent)
+    //.component('pagesZh', PagesZhComponent)
+    //.component('pagesAsszfsp', PagesAsszfspComponent)
 
 
 
