@@ -1,16 +1,46 @@
-.img-custom-page {
-  height: 300px;
-  width: 100%;
-  padding: 10px;
+.shuli-div-top {
+  padding-top: 150px;
+}
+.shuli{
+  margin: 0 auto;
+  width: 20px;
+  line-height: 24px;
+  //border: 1px solid #333;
 }
 
-.p-indent-black {
+.fangkuai-1 {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+
+.fangkuai-2 {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+}
+
+.left-line{
+  border-left: 3px solid #333;
+  min-height: 1500px;
+}
+
+.list-group-item-custom {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  //background-color: #fff;
+  border-bottom: 2px dashed grey;
+}
+
+.list-group-item-left{
   color: black;
-  font-size: medium;
-  text-indent: 2em;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
-  line-height: 35px;
+}
+
+.list-group-item-right{
+  color: grey;
+}
+.breadcrumb-custom {
+  background-color: transparent;
 }

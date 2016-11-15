@@ -1,10 +1,10 @@
-<div class="header-nav-bar">
+<div class="header-nav-bar1">
     <div class="row">
         <div class="col-md-2 col-xs-2">
         </div>
         <div class="col-md-10 col-xs-10">
             <a href="/" class="logo"></a>
-            <nav class="navbar navbar-static-top">
+            <nav class="navbar1 navbar-static-top">
                 <div class="menu-list">
                     <ul class="nav navbar-nav">
                         <li class="dropdown messages-menu" uib-dropdown>
@@ -14,21 +14,48 @@
                         </li>
                         <li class="dropdown notifications-menu" uib-dropdown>
                             <a href="#" class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>
-                                产业新闻
+                                藏典茗茶
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-1">
+                            <ul class="dropdown-menu dropdown-menu-1" uib-dropdown-menu>
                                 <li class="user-body user-body-1">
                                     <div class="row">
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.aboutafjj'>普洱茶新闻</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutgsjs'>公司介绍</a>
                                         </div>
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.aboutfzlc'>行业新闻</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutjyln'>经营理念</a>
+                                        </div>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutgsyw'>公司业务</a>
+                                        </div>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutgszz'>公司资质</a>
+                                        </div>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutqywh'>企业文化</a>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </li>
+
+                        <!--<li class="dropdown notifications-menu" uib-dropdown>-->
+                            <!--<a href="#" class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>-->
+                                <!--产业新闻-->
+                            <!--</a>-->
+                            <!--<ul class="dropdown-menu dropdown-menu-1 col-xs-3">-->
+                                <!--<li class="user-body user-body-1">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-xs-12 div-title-header-nav-bar">-->
+                                            <!--<a ui-sref='page.aboutafjj' class="a-title-header-nav-bar center">普洱茶新闻</a>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-xs-12 div-title-header-nav-bar">-->
+                                            <!--<a ui-sref='page.aboutfzlc'>行业新闻</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
                         <li class="dropdown notifications-menu" uib-dropdown>
                             <a href="#" class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>
                                 交易中心
@@ -36,11 +63,11 @@
                             <ul class="dropdown-menu dropdown-menu-1" uib-dropdown-menu>
                                 <li class="user-body user-body-1">
                                     <div class="row">
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.aboutqysp'>企业视频</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutzxjj'>中心简介</a>
                                         </div>
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.aboutasszfsp'>阿商所专访视频</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutzxdt'>中心动态</a>
                                         </div>
                                     </div>
                                 </li>
@@ -53,11 +80,11 @@
                             <ul class="dropdown-menu dropdown-menu-1" uib-dropdown-menu>
                                 <li class="user-body user-body-1">
                                     <div class="row">
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.aboutsspz'>上市品种</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutsspz'>茶文化</a>
                                         </div>
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.aboutafspxx'>阿凡商品信息</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.aboutafspxx'>茶知识</a>
                                         </div>
                                     </div>
                                 </li>
@@ -67,31 +94,52 @@
                             <a href="#" class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>
                                 藏品展示
                             </a>
+                        </li>
+                        <li class="dropdown notifications-menu" uib-dropdown>
+                            <a href="#" class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>
+                                信息中心
+                            </a>
                             <ul class="dropdown-menu dropdown-menu-1">
                                 <li class="user-body user-body-1">
                                     <div class="row">
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-esw')">e胜网</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-esw')">通知公告</a>
                                         </div>
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-yhjg')">银行监管</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-yhjg')">开户流程</a>
                                         </div>
-                                        <div class="col-xs-2 text-center">
-                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-cyzc')">产业支撑</a>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-cyzc')">交易规则</a>
+                                        </div>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-cyzc')">软件下载</a>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </li>
                         <li class="dropdown notifications-menu" uib-dropdown>
-                            <a ui-sref='page.aboutdown' class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>
-                                信息中心
-                            </a>
-                        </li>
-                        <li class="dropdown notifications-menu" uib-dropdown>
-                            <a ui-sref='page.aboutjstd' class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>
+                            <a href="#" class="dropdown-toggle dropdown-toggle-custom dropdown-toggle-dashed" data-toggle="dropdown" uib-dropdown-toggle>
                                 联系我们
                             </a>
+                            <ul class="dropdown-menu dropdown-menu-1">
+                                <li class="user-body user-body-1">
+                                    <div class="row">
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-esw')">客服QQ</a>
+                                        </div>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-yhjg')">客服热线</a>
+                                        </div>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-cyzc')">问题解答</a>
+                                        </div>
+                                        <div class="col-xs-12 div-title-header-nav-bar">
+                                            <a ui-sref='page.abouthzjg' ng-click="gotoCustom('content-page-cyzc')">合作机构</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

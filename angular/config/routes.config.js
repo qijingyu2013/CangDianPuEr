@@ -49,7 +49,7 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
           templateUrl: getLayout('layout')
         },
         'header@page': {
-          templateUrl: getView('headerpage')//page
+          templateUrl: getView('header')//page
         },
         'footer@page': {
           templateUrl: getView('footer')
@@ -258,6 +258,73 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
       views: {
         'main@page': {
           template: '<pages-zh></pages-zh>'
+        }
+      }
+    })
+    .state('page.aboutzxjj', {
+      url: '/zxjj',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-zxjj></pages-zxjj>'
+        }
+      }
+    })
+    .state('page.aboutzxdt', {
+      url: '/zxdt',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-zxdt></pages-zxdt>'
+        }
+      }
+    })
+
+    .state('page.aboutgsjs', {
+      url: '/gsjs',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-gsjs></pages-gsjs>'
+        }
+      }
+    })
+    .state('page.aboutjyln', {
+      url: '/jyln',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-jyln></pages-jyln>'
+        }
+      }
+    })
+    .state('page.aboutgsyw', {
+      url: '/gsyw',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-gsyw></pages-gsyw>'
+        }
+      }
+    })
+    .state('page.aboutgszz', {
+      url: '/gszz',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-gszz></pages-gszz>'
         }
       }
     })

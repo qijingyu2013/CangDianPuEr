@@ -1,7 +1,12 @@
 class PagesCyxwController {
-  constructor () {
+  constructor ($scope, $state, $compile, DTOptionsBuilder, DTColumnBuilder, API) {
     'ngInject'
+    this.API = API
+    this.$state = $state
 
+    let Users = this.API.service('users')
+
+    Users.getList()
   //
   }
 

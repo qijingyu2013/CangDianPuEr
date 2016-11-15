@@ -14,7 +14,8 @@ angular.module('app.filters', [])
 angular.module('app.services', [])
 angular.module('app.config', [])
 angular.module('app.components', [
-  'ui.router', 'angular-loading-bar', //'ngvideo',//'angular-animate',
+  'ui.router', 'angular-loading-bar', //'ngvideo',//'angular-animate',//
+  'ngAnimate',
   'restangular', 'ngStorage', 'satellizer',
   'ui.bootstrap', 'chart.js', 'mm.acl', 'datatables',
   'datatables.bootstrap', 'checklist-model'

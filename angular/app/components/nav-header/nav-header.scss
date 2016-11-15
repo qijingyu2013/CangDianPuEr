@@ -20,3 +20,18 @@
 .main-nav-header {
   height: 270px;
 }
+
+.img-custom-index-header {
+  height: 300px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+//.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+  height: 300px;
+}
+

@@ -1,6 +1,13 @@
-.header-nav-bar {
+.header-nav-bar1 {
   background-color: black;
   height: 90px;
+}
+
+.navbar1 {
+  //position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
 }
 
 .logo {
@@ -27,6 +34,7 @@
 .navbar-nav > li > a {
   background-color: black;
   color: white;
+  opacity: 0.65;-moz-opacity: 0.65;filter:alpha(opacity=65);
 }
 
 .nav .open > a:focus ,
@@ -53,6 +61,37 @@
   border-left: 3px dashed white;
 }
 
-//.user-body-1 {
-//  width: ;
+.user-body-1 {
+  text-align: center;
+
+}
+.navbar-nav>.notifications-menu>.dropdown-menu,
+.navbar-nav>.messages-menu>.dropdown-menu,
+.navbar-nav>.tasks-menu>.dropdown-menu {
+  width: 13.33%;
+  top: 136%;
+  left: -8%;
+  border-color:black;
+}
+
+.dropdown-menu-1 {
+  background-color: black;
+  width: 100px;
+
+}
+.dropdown-menu-1 > li > div > div > a {
+  color: white;
+}
+
+.a-title-header-nav-bar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.div-title-header-nav-bar{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+//.dropdown-menu-1 {
+//
 //}
