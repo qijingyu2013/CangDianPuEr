@@ -24,31 +24,39 @@
         <li>交易中心</li>
         <li class="active">中心动态</li>
       </ol>
-      <ul class="list-group">
-        <li class="list-group-item-custom">
-          <a href="#" class="list-group-item-left">
-            Cras justo odio
-            <a href="#" class="pull-right list-group-item-right">2016-10-30</a>
-          </a>
-        </li>
-        <li class="list-group-item-custom">
-          <a href="#" class="list-group-item-left">
-            Cras justo odio
-            <a href="#" class="pull-right list-group-item-right">2016-10-30</a>
-          </a>
-        </li>
-      </ul>
-      <nav>
-        <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
-      </nav>
+      <table datatable=""
+             width="100%"
+             class="table table-striped table-bordered"
+             ng-if="vm.displayTable"
+             dt-options="vm.dtOptions"
+             dt-columns="vm.dtColumns">
+
+      </table>
+      <!--<ul class="list-group" ng-repeat=" row in dataRows ">-->
+        <!--<li class="list-group-item-custom" >-->
+          <!--<a href="#" class="list-group-item-left">-->
+            <!--{{ row.title }}-->
+            <!--<a href="#" class="pull-right list-group-item-right">2016-10-30</a>-->
+          <!--</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item-custom">-->
+          <!--<a href="#" class="list-group-item-left">-->
+            <!--Cras justo odio-->
+            <!--<a href="#" class="pull-right list-group-item-right">2016-10-30</a>-->
+          <!--</a>-->
+        <!--</li>-->
+      <!--</ul>-->
+      <!--<nav>-->
+        <!--<ul class="pagination">-->
+          <!--<li><a href="#">&laquo;</a></li>-->
+          <!--<li><a href="#">1</a></li>-->
+          <!--<li><a href="#">2</a></li>-->
+          <!--<li><a href="#">3</a></li>-->
+          <!--<li><a href="#">4</a></li>-->
+          <!--<li><a href="#">5</a></li>-->
+          <!--<li><a href="#">&raquo;</a></li>-->
+        <!--</ul>-->
+      <!--</nav>-->
     </div>
 
   </div>

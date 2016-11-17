@@ -19,36 +19,18 @@ Route::group(['middleware' => ['web']], function () {
 
 
 });
-/**
- * admin
- */
-Route::group(['middleware' => ['web']], function () {
-//    Route::get('/', 'AngularController@serveApp');
-    Route::get('/unsupported-browser', 'AngularController@unsupported');
-    Route::get('user/verify/{verificationCode}', ['uses' => 'Auth\AuthController@verifyUserEmail']);
-    Route::get('auth/{provider}', ['uses' => 'Auth\AuthController@redirectToProvider']);
-    Route::get('auth/{provider}/callback', ['uses' => 'Auth\AuthController@handleProviderCallback']);
-    Route::get('/api/authenticate/user', 'Auth\AuthController@getAuthenticatedUser');
+
+//Route::group(['middleware' => ['api']], function ($api) {
+////    Route::get('/', 'IndexController@index');
+//    $api->get('/api/informs/dtinforms', 'InformController@getDtinforms');
+//});
+
+Route::group(['middleware' => ['service']], function ($api) {
+//    Route::get('/', 'IndexController@index');
+    $api->get('/service/informs/dtinforms', 'InformController@getDtinforms');
 });
 
-$api->group(['middleware' => ['api']], function ($api) {
-    $api->controller('auth', 'Auth\AuthController');
-
-    // Password Reset Routes...
-    $api->post('auth/password/email', 'Auth\PasswordResetController@sendResetLinkEmail');
-    $api->get('auth/password/verify', 'Auth\PasswordResetController@verify');
-    $api->post('auth/password/reset', 'Auth\PasswordResetController@reset');
-});
-
-$api->group(['middleware' => ['api', 'api.auth']], function ($api) {
-    $api->get('users/me', 'UserController@getMe');
-    $api->put('users/me', 'UserController@putMe');
-});
-
-$api->group(['middleware' => ['api', 'api.auth', 'role:admin.super|admin.user']], function ($api) {
-    $api->controller('users', 'UserController');
-});
-
-$api->group(['middleware' => ['api']], function ($api) {
-    $api->get('product/imgList', 'ProductController@getMe');
-});
+//$api->group(['middleware' => ['web']], function ($api) {
+////    $api->controller('informs', 'InformController');
+//    $api->get('/informs/dtinforms', 'InformController@getDtinforms');
+//});

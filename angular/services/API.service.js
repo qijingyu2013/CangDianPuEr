@@ -9,7 +9,7 @@ export class APIService {
 
     return Restangular.withConfig(function (RestangularConfigurer) {
       RestangularConfigurer
-        .setBaseUrl('/api/')
+        .setBaseUrl('/service/')
         .setDefaultHeaders(headers)
         .setErrorInterceptor(function (response) {
           if (response.status === 422) {
