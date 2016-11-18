@@ -15,16 +15,21 @@ import { PagesHzjgComponent } from './app/components/pages-hzjg/pages-hzjg.compo
 /**
  *  page
  */
-import { NavHeaderpageComponent } from './app/components/nav-headerpage/nav-headerpage.component'
+// import { NavHeaderpageComponent } from './app/components/nav-headerpage/nav-headerpage.component'
 import { PagesAfjjComponent } from './app/components/pages-afjj/pages-afjj.component'
 import { PagesZxjjComponent } from './app/components/pages-zxjj/pages-zxjj.component'
-import { PagesZxdtComponent } from './app/components/pages-zxdt/pages-zxdt.component'
+import { PagesZxdtListComponent } from './app/components/pages-zxdt-list/pages-zxdt-list.component'
+import { PagesZxdtOneComponent } from './app/components/pages-zxdt-one/pages-zxdt-one.component'
 
 import { PagesQywhComponent } from './app/components/pages-qywh/pages-qywh.component'
 import { PagesJylnComponent } from './app/components/pages-jyln/pages-jyln.component'
 import { PagesGsjsComponent } from './app/components/pages-gsjs/pages-gsjs.component'
 import { PagesGsywComponent } from './app/components/pages-gsyw/pages-gsyw.component'
 import { PagesGszzComponent } from './app/components/pages-gszz/pages-gszz.component'
+
+import { PagesCwhComponent } from './app/components/pages-cwh/pages-cwh.component'
+import { PagesCzsComponent } from './app/components/pages-czs/pages-czs.component'
+import { PagesCpzsComponent } from './app/components/pages-cpzs/pages-cpzs.component'
 
 angular.module('app.components')
     .component('navHeader', NavHeaderComponent)
@@ -42,14 +47,19 @@ angular.module('app.components')
     /**
      *  page
      */
-    .component('navHeaderpage', NavHeaderpageComponent)
+    // .component('navHeaderpage', NavHeaderpageComponent)
     .component('pagesAfjj', PagesAfjjComponent)
     .component('pagesZxjj', PagesZxjjComponent)
-    .component('pagesZxdt', PagesZxdtComponent)
+    .component('pagesZxdtList', PagesZxdtListComponent)
+    .component('pagesZxdtOne', PagesZxdtOneComponent)
 
     .component('pagesQywh', PagesQywhComponent)
     .component('pagesJyln', PagesJylnComponent)
     .component('pagesGsjs', PagesGsjsComponent)
     .component('pagesGsyw', PagesGsywComponent)
     .component('pagesGszz', PagesGszzComponent)
+
+    .component('pagesCwh', PagesCwhComponent)
+    .component('pagesCzs', PagesCzsComponent)
+    .component('pagesCpzs', PagesCpzsComponent)
 

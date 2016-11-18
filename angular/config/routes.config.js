@@ -72,17 +72,7 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('page.aboutfzlc', {
-      url: '/fzlc',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-fzlc></pages-fzlc>'
-        }
-      }
-    })
+
     .state('page.aboutqywh', {
       url: '/qywh',
       data: {
@@ -94,173 +84,9 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('page.aboutldgh', {
-      url: '/ldgh',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-ldgh></pages-ldgh>'
-        }
-      }
-    })
-    .state('page.aboutaflssyb', {
-      url: '/aflssyb',
-      data: {
-        auth: false
-        //auth: true
-      },
-      views: {
-        'main@page': {
-          template: '<pages-aflssyb></pages-aflssyb>'
-        }
-      }
-    })
-    .state('page.aboutgdbj', {
-      url: '/gdbj',
-      data: {
-        auth: false
-        //auth: true
-      },
-      views: {
-        'main@page': {
-          template: '<pages-gdbj></pages-gdbj>'
-        }
-      }
-    })
-    .state('page.aboutqysp', {
-      url: '/qysp',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-qysp></pages-qysp>'
-        }
-      }
-    })
-    .state('page.aboutasszfsp', {
-      url: '/asszfsp',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-asszfsp></pages-asszfsp>'
-        }
-      }
-    })
-    .state('page.aboutsspz', {
-      url: '/sspz',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-sspz></pages-sspz>'
-        }
-      }
-    })
-    .state('page.aboutafspxx', {
-      url: '/afspxx',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-afspxx></pages-afspxx>'
-        }
-      }
-    })
-    .state('page.abouthzjg', {
-      url: '/hzjg',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-hzjg></pages-hzjg>'
-        }
-      }
-    })
-    .state('page.aboutdown', {
-      url: '/down',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-down></pages-down>'
-        }
-      }
-    })
-    .state('page.aboutjstd', {
-      url: '/jstd',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-jstd></pages-jstd>'
-        }
-      }
-    })
-    .state('page.aboutzbs', {
-      url: '/zbs',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-zbs></pages-zbs>'
-        }
-      }
-    })
-    .state('page.aboutafys', {
-      url: '/afys',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-afys></pages-afys>'
-        }
-      }
-    })
-    .state('page.aboutafjl', {
-      url: '/afjl',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-afjl></pages-afjl>'
-        }
-      }
-    })
-    .state('page.aboutjmlc', {
-      url: '/jmlc',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-jmlc></pages-jmlc>'
-        }
-      }
-    })
-    .state('page.aboutzh', {
-      url: '/zh',
-      data: {
-        auth: false
-      },
-      views: {
-        'main@page': {
-          template: '<pages-zh></pages-zh>'
-        }
-      }
-    })
+
+
+
     .state('page.aboutzxjj', {
       url: '/zxjj',
       data: {
@@ -272,14 +98,25 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('page.aboutzxdt', {
-      url: '/zxdt',
+    .state('page.zxdtlist', {
+      url: '/zxdt-list',
       data: {
         auth: false
       },
       views: {
         'main@page': {
-          template: '<pages-zxdt></pages-zxdt>'
+          template: '<pages-zxdt-list></pages-zxdt-list>'
+        }
+      }
+    })
+    .state('page.zxdtone', {
+      url: '/zxdt-one/:dataRowId',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-zxdt-one></pages-zxdt-one>'
         }
       }
     })
@@ -328,332 +165,69 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-
-    .state('app.tablessimple', {
-      url: '/tables-simple',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<tables-simple></tables-simple>'
-        }
-      }
-    })
-    .state('app.uiicons', {
-      url: '/ui-icons',
+    .state('page.cwhlist', {
+      url: '/tea-cwh-list',
       data: {
         auth: false
       },
       views: {
-        'main@app': {
-          template: '<ui-icons></ui-icons>'
+        'main@page': {
+          template: '<pages-cwh-list></pages-cwh-list>'
         }
       }
     })
-    .state('app.uimodal', {
-      url: '/ui-modal',
+    .state('page.cwhone', {
+      url: '/tea-cwh-one/:dataRowId',
       data: {
-        auth: true
+        auth: false
       },
       views: {
-        'main@app': {
-          template: '<ui-modal></ui-modal>'
+        'main@page': {
+          template: '<pages-cwh-one></pages-cwh-one>'
         }
       }
     })
-    .state('app.uitimeline', {
-      url: '/ui-timeline',
+    .state('page.czslist', {
+      url: '/tea-czs-list',
       data: {
-        auth: true
+        auth: false
       },
       views: {
-        'main@app': {
-          template: '<ui-timeline></ui-timeline>'
+        'main@page': {
+          template: '<pages-czs-list></pages-czs-list>'
         }
       }
     })
-    .state('app.uibuttons', {
-      url: '/ui-buttons',
+    .state('page.czsone', {
+      url: '/tea-czs-one/:dataRowId',
       data: {
-        auth: true
+        auth: false
       },
       views: {
-        'main@app': {
-          template: '<ui-buttons></ui-buttons>'
+        'main@page': {
+          template: '<pages-czs-one></pages-czs-one>'
         }
       }
     })
-    .state('app.uigeneral', {
-      url: '/ui-general',
+    .state('page.cpzslist', {
+      url: '/tea-cpzs-list',
       data: {
-        auth: true
+        auth: false
       },
       views: {
-        'main@app': {
-          template: '<ui-general></ui-general>'
+        'main@page': {
+          template: '<pages-cpzs-list></pages-cpzs-list>'
         }
       }
     })
-    .state('app.formsgeneral', {
-      url: '/forms-general',
+    .state('page.cpzsone', {
+      url: '/tea-cpzs-one/:dataRowId',
       data: {
-        auth: true
+        auth: false
       },
       views: {
-        'main@app': {
-          template: '<forms-general></forms-general>'
-        }
-      }
-    })
-    .state('app.chartjs', {
-      url: '/charts-chartjs',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<charts-chartjs></charts-chartjs>'
-        }
-      }
-    })
-    .state('app.comingsoon', {
-      url: '/comingsoon',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<coming-soon></coming-soon>'
-        }
-      }
-    })
-    .state('app.profile', {
-      url: '/profile',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-profile></user-profile>'
-        }
-      },
-      params: {
-        alerts: null
-      }
-    })
-    .state('app.userlist', {
-      url: '/user-lists',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-lists></user-lists>'
-        }
-      }
-    })
-    .state('app.useredit', {
-      url: '/user-edit/:userId',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-edit></user-edit>'
-        }
-      },
-      params: {
-        alerts: null,
-        userId: null
-      }
-    })
-    .state('app.userroles', {
-      url: '/user-roles',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-roles></user-roles>'
-        }
-      }
-    })
-    .state('app.userpermissions', {
-      url: '/user-permissions',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-permissions></user-permissions>'
-        }
-      }
-    })
-    .state('app.userpermissionsadd', {
-      url: '/user-permissions-add',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-permissions-add></user-permissions-add>'
-        }
-      },
-      params: {
-        alerts: null
-      }
-    })
-    .state('app.userpermissionsedit', {
-      url: '/user-permissions-edit/:permissionId',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-permissions-edit></user-permissions-edit>'
-        }
-      },
-      params: {
-        alerts: null,
-        permissionId: null
-      }
-    })
-    .state('app.userrolesadd', {
-      url: '/user-roles-add',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-roles-add></user-roles-add>'
-        }
-      },
-      params: {
-        alerts: null
-      }
-    })
-    .state('app.userrolesedit', {
-      url: '/user-roles-edit/:roleId',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<user-roles-edit></user-roles-edit>'
-        }
-      },
-      params: {
-        alerts: null,
-        roleId: null
-      }
-    })
-    .state('app.widgets', {
-      url: '/widgets',
-      data: {
-        auth: true
-      },
-      views: {
-        'main@app': {
-          template: '<widgets></widgets>'
-        }
-      }
-    })
-    .state('login', {
-      url: '/login',
-      views: {
-        'layout': {
-          templateUrl: getView('login')
-        },
-        'header@app': {},
-        'footer@app': {}
-      },
-      data: {
-        bodyClass: 'hold-transition login-page'
-      },
-      params: {
-        registerSuccess: null,
-        successMsg: null
-      }
-    })
-    .state('loginloader', {
-      url: '/login-loader',
-      views: {
-        'layout': {
-          templateUrl: getView('login-loader')
-        },
-        'header@app': {},
-        'footer@app': {}
-      },
-      data: {
-        bodyClass: 'hold-transition login-page'
-      }
-    })
-    .state('register', {
-      url: '/register',
-      views: {
-        'layout': {
-          templateUrl: getView('register')
-        },
-        'header@app': {},
-        'footer@app': {}
-      },
-      data: {
-        bodyClass: 'hold-transition register-page'
-      }
-    })
-    .state('userverification', {
-      url: '/userverification/:status',
-      views: {
-        'layout': {
-          templateUrl: getView('user-verification')
-        }
-      },
-      data: {
-        bodyClass: 'hold-transition login-page'
-      },
-      params: {
-        status: null
-      }
-    })
-    .state('forgot_password', {
-      url: '/forgot-password',
-      views: {
-        'layout': {
-          templateUrl: getView('forgot-password')
-        },
-        'header@app': {},
-        'footer@app': {}
-      },
-      data: {
-        bodyClass: 'hold-transition login-page'
-      }
-    })
-    .state('reset_password', {
-      url: '/reset-password/:email/:token',
-      views: {
-        'layout': {
-          templateUrl: getView('reset-password')
-        },
-        'header@app': {},
-        'footer@app': {}
-      },
-      data: {
-        bodyClass: 'hold-transition login-page'
-      }
-    })
-    .state('app.logout', {
-      url: '/logout',
-      views: {
-        'main@app': {
-          controller: function ($rootScope, $scope, $auth, $state, AclService) {
-            $auth.logout().then(function () {
-              delete $rootScope.me
-              AclService.flushRoles()
-              AclService.setAbilities({})
-              $state.go('login')
-            })
-          }
+        'main@page': {
+          template: '<pages-cpzs-one></pages-cpzs-one>'
         }
       }
     })

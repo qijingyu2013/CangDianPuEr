@@ -26,8 +26,8 @@ Route::group(['middleware' => ['web']], function () {
 //});
 
 Route::group(['middleware' => ['service']], function ($api) {
-//    Route::get('/', 'IndexController@index');
     $api->get('/service/informs/dtinforms', 'InformController@getDtinforms');
+    $api->get('/service/informs/inform-show/{id}', 'InformController@getDtinformsShow');
 });
 
 //$api->group(['middleware' => ['web']], function ($api) {
