@@ -28,8 +28,18 @@ import { PagesGsywComponent } from './app/components/pages-gsyw/pages-gsyw.compo
 import { PagesGszzComponent } from './app/components/pages-gszz/pages-gszz.component'
 
 import { PagesCwhComponent } from './app/components/pages-cwh/pages-cwh.component'
+import { PagesCwhListComponent } from './app/components/pages-cwh-list/pages-cwh-list.component'
+import { PagesCwhOneComponent } from './app/components/pages-cwh-one/pages-cwh-one.component'
 import { PagesCzsComponent } from './app/components/pages-czs/pages-czs.component'
-import { PagesCpzsComponent } from './app/components/pages-cpzs/pages-cpzs.component'
+import { PagesCzsListComponent } from './app/components/pages-czs-list/pages-czs-list.component'
+import { PagesCzsOneComponent } from './app/components/pages-czs-one/pages-czs-one.component'
+import { PagesCpzsListComponent } from './app/components/pages-cpzs-list/pages-cpzs-list.component'
+import { PagesCpzsOneComponent } from './app/components/pages-cpzs-one/pages-cpzs-one.component'
+
+import { PagesTzggListComponent } from './app/components/pages-tzgg-list/pages-tzgg-list.component'
+import { PagesTzggOneComponent } from './app/components/pages-tzgg-one/pages-tzgg-one.component'
+import { PagesJygzListComponent } from './app/components/pages-jygz-list/pages-jygz-list.component'
+import { PagesJygzOneComponent } from './app/components/pages-jygz-one/pages-jygz-one.component'
 
 angular.module('app.components')
     .component('navHeader', NavHeaderComponent)
@@ -60,6 +70,16 @@ angular.module('app.components')
     .component('pagesGszz', PagesGszzComponent)
 
     .component('pagesCwh', PagesCwhComponent)
+    .component('pagesCwhList', PagesCwhListComponent)
+    .component('pagesCwhOne', PagesCwhOneComponent)
     .component('pagesCzs', PagesCzsComponent)
-    .component('pagesCpzs', PagesCpzsComponent)
+    .component('pagesCzsList', PagesCzsListComponent)
+    .component('pagesCzsOne', PagesCzsOneComponent)
+    .component('pagesCpzsList', PagesCpzsListComponent)
+    .component('pagesCpzsOne', PagesCpzsOneComponent)
+
+    .component('pagesTzggList', PagesTzggListComponent)
+    .component('pagesTzggOne', PagesTzggOneComponent)
+    .component('pagesJygzList', PagesJygzListComponent)
+    .component('pagesJygzOne', PagesJygzOneComponent)
 

@@ -231,4 +231,48 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+    .state('page.tzgglist', {
+      url: '/tea-tzgg-list',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-tzgg-list></pages-tzgg-list>'
+        }
+      }
+    })
+    .state('page.tzggone', {
+      url: '/tea-tzgg-one/:dataRowId',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-tzgg-one></pages-tzgg-one>'
+        }
+      }
+    })
+    .state('page.jygzlist', {
+      url: '/tea-jygz-list',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-jygz-list></pages-jygz-list>'
+        }
+      }
+    })
+    .state('page.jygzone', {
+      url: '/tea-jygz-one/:dataRowId',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-jygz-one></pages-jygz-one>'
+        }
+      }
+    })
 }

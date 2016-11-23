@@ -1,0 +1,45 @@
+.shuli-div-top {
+  padding-top: 150px;
+}
+.shuli{
+  margin: 0 auto;
+  width: 20px;
+  line-height: 24px;
+  //border: 1px solid #333;
+}
+
+.fangkuai-1 {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+
+.fangkuai-2 {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+}
+
+.left-line{
+  border-left: 3px solid #333;
+}
+
+.list-group-item-custom {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  //background-color: #fff;
+  border-bottom: 2px dashed grey;
+}
+
+.list-group-item-left{
+  color: black;
+}
+
+.list-group-item-right{
+  color: grey;
+}
+.breadcrumb-custom {
+  background-color: transparent;
+}
