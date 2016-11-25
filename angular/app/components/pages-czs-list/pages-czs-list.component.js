@@ -4,7 +4,7 @@ class PagesCzsListController {
     this.API = API
     // this.$state = $state
 
-    let dataRows = this.API.service('dtinforms', this.API.all('informs'))
+    let dataRows = this.API.service('teaknowledges', this.API.all('informs'))
 
     dataRows.getList()
         .then((response) => {
