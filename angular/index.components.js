@@ -27,10 +27,10 @@ import { PagesGsjsComponent } from './app/components/pages-gsjs/pages-gsjs.compo
 import { PagesGsywComponent } from './app/components/pages-gsyw/pages-gsyw.component'
 import { PagesGszzComponent } from './app/components/pages-gszz/pages-gszz.component'
 
-import { PagesCwhComponent } from './app/components/pages-cwh/pages-cwh.component'
+// import { PagesCwhComponent } from './app/components/pages-cwh/pages-cwh.component'
 import { PagesCwhListComponent } from './app/components/pages-cwh-list/pages-cwh-list.component'
 import { PagesCwhOneComponent } from './app/components/pages-cwh-one/pages-cwh-one.component'
-import { PagesCzsComponent } from './app/components/pages-czs/pages-czs.component'
+// import { PagesCzsComponent } from './app/components/pages-czs/pages-czs.component'
 import { PagesCzsListComponent } from './app/components/pages-czs-list/pages-czs-list.component'
 import { PagesCzsOneComponent } from './app/components/pages-czs-one/pages-czs-one.component'
 import { PagesCpzsListComponent } from './app/components/pages-cpzs-list/pages-cpzs-list.component'
@@ -40,6 +40,10 @@ import { PagesTzggListComponent } from './app/components/pages-tzgg-list/pages-t
 import { PagesTzggOneComponent } from './app/components/pages-tzgg-one/pages-tzgg-one.component'
 import { PagesJygzListComponent } from './app/components/pages-jygz-list/pages-jygz-list.component'
 import { PagesJygzOneComponent } from './app/components/pages-jygz-one/pages-jygz-one.component'
+
+import { PagesKhlcComponent } from './app/components/pages-khlc/pages-khlc.component'
+import { PagesRjxzComponent } from './app/components/pages-rjxz/pages-rjxz.component'
+
 
 angular.module('app.components')
     .component('navHeader', NavHeaderComponent)
@@ -69,10 +73,10 @@ angular.module('app.components')
     .component('pagesGsyw', PagesGsywComponent)
     .component('pagesGszz', PagesGszzComponent)
 
-    .component('pagesCwh', PagesCwhComponent)
+    // .component('pagesCwh', PagesCwhComponent)
     .component('pagesCwhList', PagesCwhListComponent)
     .component('pagesCwhOne', PagesCwhOneComponent)
-    .component('pagesCzs', PagesCzsComponent)
+    // .component('pagesCzs', PagesCzsComponent)
     .component('pagesCzsList', PagesCzsListComponent)
     .component('pagesCzsOne', PagesCzsOneComponent)
     .component('pagesCpzsList', PagesCpzsListComponent)
@@ -82,4 +86,5 @@ angular.module('app.components')
     .component('pagesTzggOne', PagesTzggOneComponent)
     .component('pagesJygzList', PagesJygzListComponent)
     .component('pagesJygzOne', PagesJygzOneComponent)
-
+    .component('pagesKhlc', PagesKhlcComponent)
+    .component('pagesRjxz', PagesRjxzComponent)

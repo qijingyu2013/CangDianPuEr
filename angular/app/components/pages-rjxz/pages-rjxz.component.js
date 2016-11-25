@@ -1,4 +1,4 @@
-class PagesCzsController {
+class PagesRjxzController {
   constructor ($scope, $compile, DTOptionsBuilder, DTColumnBuilder, API) {
     'ngInject'
     this.API = API
@@ -47,14 +47,14 @@ class PagesCzsController {
     let titlesHtml = (data) => {
 
       return `
-                <a ui-sref="app.dtinformone({dtinformId: ${data.id}})">
+                <a ui-sref="page.zxdtone({dataRowId: ${data.id}})">
                     ${data.title}
                 </a>`
     }
 
     let timesHtml = (data) => {
       return `
-                <a ui-sref="app.dtinformone({dtinformId: ${data.id}})">
+                <a ui-sref="page.zxdtone({dataRowId: ${data.id}})">
                     <p class="text-right">
                         ${data.created_at}
                     </p>
@@ -66,9 +66,9 @@ class PagesCzsController {
 
 }
 
-export const PagesCzsComponent = {
-  templateUrl: './views/app/components/pages-czs/pages-czs.component.html',
-  controller: PagesCzsController,
+export const PagesRjxzComponent = {
+  templateUrl: './views/app/components/pages-rjxz/pages-rjxz.component.html',
+  controller: PagesRjxzController,
   controllerAs: 'vm',
   bindings: {}
 }

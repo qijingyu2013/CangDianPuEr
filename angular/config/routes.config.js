@@ -275,4 +275,26 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+      .state('page.aboutkhlc', {
+        url: '/khlc',
+        data: {
+          auth: false
+        },
+        views: {
+          'main@page': {
+            template: '<pages-khlc></pages-khlc>'
+          }
+        }
+      })
+      .state('page.aboutrjxz', {
+        url: '/rjxz',
+        data: {
+          auth: false
+        },
+        views: {
+          'main@page': {
+            template: '<pages-rjxz></pages-rjxz>'
+          }
+        }
+      })
 }
