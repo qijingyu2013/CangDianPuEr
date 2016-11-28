@@ -3,7 +3,7 @@ class PagesCpzsListController {
     'ngInject'
     this.API = API
 
-    let dataRows = this.API.service('teaknowledges', this.API.all('informs'))
+    let dataRows = this.API.service('teacollections', this.API.all('informs'))
 
     dataRows.getList()
         .then((response) => {

@@ -111,7 +111,7 @@ class InformController extends Controller
      * @return JSON
      */
     public function getTeacollections(){
-        $teacollections = Inform::where('columnId', '=', 4)->get();
+        $teacollections = Inform::where('columnId', '=', self::teacollection)->get();
         return response()->success(compact('teacollections'));
     }
 

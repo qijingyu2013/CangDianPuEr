@@ -46,14 +46,14 @@ class PagesJygzListController {
     let titlesHtml = (data) => {
 
       return `
-                <a ui-sref="page.zxdtone({dataRowId: ${data.id}})">
+                <a ui-sref="page.jygzone({dataRowId: ${data.id}})">
                     ${data.title}
                 </a>`
     }
 
     let timesHtml = (data) => {
       return `
-                <a ui-sref="page.zxdtone({dataRowId: ${data.id}})">
+                <a ui-sref="page.jygzone({dataRowId: ${data.id}})">
                     <p class="text-right">
                         ${data.created_at}
                     </p>

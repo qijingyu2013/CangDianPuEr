@@ -31,7 +31,7 @@ Route::group(['middleware' => ['service']], function ($api) {
     $api->get('/service/informs/inform-show/{id}', 'InformController@getDtinformsShow');
     $api->get('/service/informs/teaknowledges', 'InformController@getTeaknowledges');
     $api->get('/service/informs/teacultures', 'InformController@getTeacultures');
-
+    $api->get('/service/informs/teacollections', 'InformController@getTeacollections');
     $api->get('/service/informs/tradeannouncements', 'InformController@getTradeannouncements');
     $api->get('/service/informs/traderules', 'InformController@getTraderules');
 });
