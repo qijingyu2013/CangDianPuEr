@@ -2,7 +2,6 @@ class PagesCzsListController {
   constructor ($scope, $compile, DTOptionsBuilder, DTColumnBuilder, API) {
     'ngInject'
     this.API = API
-    // this.$state = $state
 
     let dataRows = this.API.service('teaknowledges', this.API.all('informs'))
 

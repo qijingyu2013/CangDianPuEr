@@ -9,8 +9,6 @@ class PagesJygzOneController {
       dataRow.one(dataRowId).get()
           .then((response) => {
           this.dataRes = API.copy(response)
-    // trustHtml
-    console.log(this.dataRes.data.title);
           $scope.title = this.dataRes.data.title;
           $scope.content = this.dataRes.data.content;
           // $scope.article.htmlStr = '<p style="color:red;font-size=18px;">sdfsfsdfsdf</p>';
