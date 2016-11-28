@@ -166,7 +166,7 @@ class InformController extends Controller
      * @return JSON
      */
     public function getTraderules(){
-        $traderules = Inform::where('columnId', '=', self::tradeannouncement)->get();
+        $traderules = Inform::where('columnId', '=', self::traderule)->get();
         return response()->success(compact('traderules'));
     }
 

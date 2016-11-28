@@ -26,8 +26,14 @@ Route::group(['middleware' => ['web']], function () {
 //});
 
 Route::group(['middleware' => ['service']], function ($api) {
+//    $api->controller('informs', 'InformController');
     $api->get('/service/informs/dtinforms', 'InformController@getDtinforms');
     $api->get('/service/informs/inform-show/{id}', 'InformController@getDtinformsShow');
+    $api->get('/service/informs/teaknowledges', 'InformController@getTeaknowledges');
+    $api->get('/service/informs/teacultures', 'InformController@getTeacultures');
+
+    $api->get('/service/informs/tradeannouncements', 'InformController@getTradeannouncements');
+    $api->get('/service/informs/traderules', 'InformController@getTraderules');
 });
 
 //$api->group(['middleware' => ['web']], function ($api) {
