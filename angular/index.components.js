@@ -1,5 +1,6 @@
 import { NavHeaderComponent } from './app/components/nav-header/nav-header.component'
 import { NavBarComponent } from './app/components/nav-bar/nav-bar.component'
+import { PagesFloatComponent } from './app/components/pages-float/pages-float.component'
 /**
  *  index
  */
@@ -45,6 +46,7 @@ import { PagesJygzOneComponent } from './app/components/pages-jygz-one/pages-jyg
 angular.module('app.components')
     .component('navHeader', NavHeaderComponent)
     .component('navBar', NavBarComponent)
+    .component('pagesFloat', PagesFloatComponent)
     /**
      *  index
      */
@@ -52,6 +54,7 @@ angular.module('app.components')
     .component('pagesCyxw', PagesCyxwComponent)
     .component('pagesHyxw', PagesHyxwComponent)
     .component('pagesHzjg', PagesHzjgComponent)
+
     //.component('imgList', ImgListComponent)
     //.component('videoList', VideoListComponent)
     //.component('imgChange', ImgChangeComponent)
