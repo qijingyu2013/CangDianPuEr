@@ -7,7 +7,7 @@ function carouselClass () {
       forward: '=',
       currentSlide: '='
     },
-    link: function (scope, element, attrs, ctrl) {
+    link: function ($scope, element, attrs, ctrl) {
       $scope.slides = [];
       this.addSlide = function (slide) {
         if($scope.currentSlide === $scope.slides.length){

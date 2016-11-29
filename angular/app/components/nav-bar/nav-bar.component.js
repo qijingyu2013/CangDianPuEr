@@ -2,7 +2,7 @@
  * Created by qijingyu on 2016-08-09.
  */
 class NavBarController {
-    constructor ($scope, $location, $anchorScroll) { //$rootScope, ContextService,
+    constructor ($scope, $location) { //, $anchorScroll, $rootScope, ContextService,
         'ngInject'
 
         //let navBar = this

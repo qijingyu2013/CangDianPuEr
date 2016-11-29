@@ -3,7 +3,7 @@ class NavHeaderController {
     'ngInject'
 
     $scope.directory = [
-      {id:0, imgSrc: 'img/index/111.jpg', imgCls: 'img-responsive img-custom-index-header'},
+      {id:0, imgSrc: 'img/index/111.jpg', imgCls: 'img-responsive img-custom-index-header'}
       //{id:1, imgSrc: 'img/index/l2.jpg', imgCls: 'img-responsive img-custom-3'},
       //{id:2, imgSrc: 'img/index/l3.jpg', imgCls: 'img-responsive img-custom-3'},
       //{id:3, imgSrc: 'img/index/l4.jpg', imgCls: 'img-responsive img-custom-3'},
