@@ -1,29 +1,57 @@
 class ImgCarouselController {
-  constructor ($scope) {
+  constructor ($scope, API) {
     'ngInject'
+    this.API = API
+    $scope.directory = [];
+    function truncate (input, chars, breakOnWord) {
+      if (isNaN(chars)) return input;
+      if (chars <= 0) return '';
+      if (input && input.length > chars) {
+        input = input.substring(0, chars);
 
-    $scope.directory = [
-      {id:0, imgArr:[
-        {imgSrc: 'img/index/l1.jpg', imgCls: 'img-responsive img-custom-3' ,text: 'aaaaaa'},
-        {imgSrc: 'img/index/l2.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'},
-        {imgSrc: 'img/index/l3.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'}
-      ]},
-      {id:1, imgArr:[
-        {imgSrc: 'img/index/l2.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'},
-        {imgSrc: 'img/index/l3.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'},
-        {imgSrc: 'img/index/l3.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'}
-      ]},
-      {id:2, imgArr:[
-        {imgSrc: 'img/index/l3.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'},
-        {imgSrc: 'img/index/l2.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'},
-        {imgSrc: 'img/index/l3.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'}
-      ]},
-      {id:3, imgArr:[
-        {imgSrc: 'img/index/l4.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'},
-        {imgSrc: 'img/index/l2.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'},
-        {imgSrc: 'img/index/l3.jpg', imgCls: 'img-responsive img-custom-3' ,text: '的方式地方都是'}
-      ]}
-    ];
+        if (!breakOnWord) {
+          var lastspace = input.lastIndexOf(' ');
+          //get last space
+          if (lastspace !== -1) {
+            input = input.substr(0, lastspace);
+          }
+        }else{
+          while(input.charAt(input.length-1) === ' '){
+            input = input.substr(0, input.length -1);
+          }
+        }
+        return input + '…';
+      }
+      return input;
+    };
+
+    let dataRows = this.API.service('teacollections', this.API.all('informs'));
+    var dataRowLists = dataRows.getList();
+
+    dataRows.getList().then(function(res) {
+      var tmpArr = [];
+      var tmpi = 0;
+      var tmpj = 0;
+      var total = res.length-1;
+      angular.forEach(res, function(data,index,array){
+        var tobj={imgSrc:data.img, imgCls:'img-responsive img-custom-3', text:truncate ( data.title, 8, true)};
+        tmpArr.push(tobj);
+        tmpi++;
+
+        if(tmpi>2){
+          tmpi=0;
+
+          $scope.directory.push({id:tmpj, imgArr:tmpArr});
+          tmpj++;
+          tmpArr = [];
+        }else if (total == index){
+          $scope.directory.push({id:tmpj, imgArr:tmpArr});
+        }
+      });
+      console.log($scope.directory);
+
+    });
+
     var element = angular.element("#carousel-hyxw");
 
     element.addClass("carousel-indicators-display-none");

@@ -46,20 +46,46 @@ class PagesCpzsListController {
     let imgsHtml = (data) => {
 
       return `
-                <a ui-sref="page.cpzsone({dataRowId: ${data.id}})">
-                    <img  src="${data.img}" />
-                </a>`
+                <div style="height: 160px;width: 270px;">
+                    <a ui-sref="page.cpzsone({dataRowId: ${data.id}})">
+                        <img class="img-responsive center-block" src="${data.img}"/>
+                    </a>
+                </div>`
     }
 
     let contentsHtml = (data) => {
+          function truncate (input, chars, breakOnWord) {
+              if (isNaN(chars)) return input;
+              if (chars <= 0) return '';
+              if (input && input.length > chars) {
+                  input = input.substring(0, chars);
+
+                  if (!breakOnWord) {
+                      var lastspace = input.lastIndexOf(' ');
+                      //get last space
+                      if (lastspace !== -1) {
+                          input = input.substr(0, lastspace);
+                      }
+                  }else{
+                      while(input.charAt(input.length-1) === ' '){
+                          input = input.substr(0, input.length -1);
+                      }
+                  }
+                  return input + '…';
+              }
+              return input;
+          };
+          var ttc = truncate ( data.tcontent, 65, true);
       return `
                 <a ui-sref="page.cpzsone({dataRowId: ${data.id}})">
-                    <p class="text-right">
-                        ${data.title}
+                    <p class="p-indent-black">
+                    ${ttc}
                     </p>
                 </a>`
     }
   }
+
+
 
   $onInit () {}
 

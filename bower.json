@@ -35,7 +35,8 @@
     "videogular-themes-default": "1.4.4",
     "videogular-buffering": "1.4.4",
     "angular-animate": "^1.x",
-    "angular-froala": "~2.3.5"
+    "angular-froala": "~2.3.5",
+    "angular-truncate-2": "~0.4.2"
   },
   "resolutions": {
     "angular": "~1.5.x"

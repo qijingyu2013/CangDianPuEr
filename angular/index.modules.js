@@ -18,7 +18,7 @@ angular.module('app.components', [
   'restangular', 'ngStorage', 'satellizer',
   'ui.bootstrap', 'chart.js', 'mm.acl', 'datatables',
   'datatables.bootstrap', 'checklist-model',
-  'ngSanitize','froala',
+  'ngSanitize', 'froala', 'truncate',
   'com.2fdevs.videogular',
   'com.2fdevs.videogular.plugins.controls',
   'com.2fdevs.videogular.plugins.overlayplay',
