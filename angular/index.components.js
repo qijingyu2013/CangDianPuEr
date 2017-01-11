@@ -40,8 +40,14 @@ import { PagesTzggListComponent } from './app/components/pages-tzgg-list/pages-t
 import { PagesTzggOneComponent } from './app/components/pages-tzgg-one/pages-tzgg-one.component'
 import { PagesJygzListComponent } from './app/components/pages-jygz-list/pages-jygz-list.component'
 import { PagesJygzOneComponent } from './app/components/pages-jygz-one/pages-jygz-one.component'
-
-
+/**
+ *  weixin
+ */
+import { WeixinsBiquQueryaccountComponent } from './app/components/weixins-biqu-queryaccount/weixins-biqu-queryaccount.component'
+import { WeixinsBiquMenuComponent } from './app/components/weixins-biqu-menu/weixins-biqu-menu.component'
+import { WeixinsBiquHaiyiserviceComponent } from './app/components/weixins-biqu-haiyiservice/weixins-biqu-haiyiservice.component'
+import { WeixinsBiquGetticketComponent } from './app/components/weixins-biqu-getticket/weixins-biqu-getticket.component'
+import { WeixinsBiquHaiyierweimaComponent } from './app/components/weixins-biqu-haiyierweima/weixins-biqu-haiyierweima.component'
 
 angular.module('app.components')
     .component('navHeader', NavHeaderComponent)
@@ -87,3 +93,12 @@ angular.module('app.components')
     .component('pagesTzggOne', PagesTzggOneComponent)
     .component('pagesJygzList', PagesJygzListComponent)
     .component('pagesJygzOne', PagesJygzOneComponent)
+
+    /**
+     *  weixin
+     */
+    .component('weixinsBiquQueryaccount', WeixinsBiquQueryaccountComponent)
+    .component('weixinsBiquMenu', WeixinsBiquMenuComponent)
+    .component('weixinsBiquHaiyiservice', WeixinsBiquHaiyiserviceComponent)
+    .component('weixinsBiquGetticket', WeixinsBiquGetticketComponent)
+    .component('weixinsBiquHaiyierweima', WeixinsBiquHaiyierweimaComponent)

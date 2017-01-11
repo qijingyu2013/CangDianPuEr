@@ -16,15 +16,11 @@
  */
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'IndexController@index');
-
-
 });
 
-//Route::group(['middleware' => ['api']], function ($api) {
-////    Route::get('/', 'IndexController@index');
-//    $api->get('/api/informs/dtinforms', 'InformController@getDtinforms');
-//});
-
+/*
+ * json
+ */
 Route::group(['middleware' => ['service']], function ($api) {
 //    $api->controller('informs', 'InformController');
     $api->get('/service/informs/dtinforms', 'InformController@getDtinforms');
@@ -36,7 +32,17 @@ Route::group(['middleware' => ['service']], function ($api) {
     $api->get('/service/informs/traderules', 'InformController@getTraderules');
 });
 
-//$api->group(['middleware' => ['web']], function ($api) {
-////    $api->controller('informs', 'InformController');
-//    $api->get('/informs/dtinforms', 'InformController@getDtinforms');
-//});
+/*
+ * weixin
+ */
+Route::group(['middleware' => ['weixin']], function ($api) {
+//    $api->post('/biqu/haiyi/getcoupon', 'Weixin\BiquHaiyiController@getcoupon');
+    $api->get('/biqu/haiyi/getcoupon', 'BiquHaiyiController@getcoupon');
+});
+
+/*
+ * mobile
+ */
+Route::group(['middleware' => ['mob']], function () {
+    Route::get('/mob', 'MobController@index');
+});

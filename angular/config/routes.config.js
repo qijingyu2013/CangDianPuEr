@@ -9,6 +9,17 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
     return `./views/app/pages/layout/${layout}.page.html`
   }
 
+  /**
+   * weixin
+   */
+  var getWeixinView = (viewName) => {
+      return `./views/app/weixins/${viewName}/${viewName}.weixin.html`
+  }
+
+  var getWeixinLayout = (layout) => {
+      return `./views/app/weixins/layout/${layout}.weixin.html`
+  }
+
   $urlRouterProvider.otherwise('/')
 
   $stateProvider
@@ -60,6 +71,7 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         bodyClass: 'hold-transition skin-blue'
       }
     })
+
     .state('page.aboutafjj', {
       url: '/afjj',
       data: {
@@ -275,26 +287,109 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-      .state('page.aboutkhlc', {
-        url: '/khlc',
+    .state('page.aboutkhlc', {
+      url: '/khlc',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-khlc></pages-khlc>'
+        }
+      }
+    })
+    .state('page.aboutrjxz', {
+      url: '/rjxz',
+      data: {
+        auth: false
+      },
+      views: {
+        'main@page': {
+          template: '<pages-rjxz></pages-rjxz>'
+        }
+      }
+    })
+
+    /**
+     * weixin
+     */
+
+    .state('weixin', {
+        abstract: true,
+        views: {
+            'layout': {
+                templateUrl: getWeixinLayout('layout')
+            },
+            'header@weixin': {
+                templateUrl: getWeixinView('header')
+            },
+            'footer@weixin': {
+                templateUrl: getWeixinView('footer')
+            },
+            main: {}
+        },
         data: {
-          auth: false
+            bodyClass: 'hold-transition'
+        }
+    })
+
+    .state('weixin.biqumenu', {
+        url: '/biqumenu',
+        data: {
+            auth: false
         },
         views: {
-          'main@page': {
-            template: '<pages-khlc></pages-khlc>'
-          }
+            'main@weixin': {
+                template: '<weixins-biqu-menu></weixins-biqu-menu>'
+            }
         }
-      })
-      .state('page.aboutrjxz', {
-        url: '/rjxz',
+    })
+
+    .state('weixin.biququeryaccount', {
+        url: '/biququeryaccount',
         data: {
-          auth: false
+            auth: false
         },
         views: {
-          'main@page': {
-            template: '<pages-rjxz></pages-rjxz>'
-          }
+            'main@weixin': {
+                template: '<weixins-biqu-queryaccount></weixins-biqu-queryaccount>'
+            }
         }
-      })
+    })
+
+    .state('weixin.biqugetticket', {
+      url: '/biqugetticket',
+      data: {
+          auth: false
+      },
+      views: {
+          'main@weixin': {
+              template: '<weixins-biqu-getticket></weixins-biqu-getticket>'
+          }
+      }
+    })
+
+    .state('weixin.biquhaiyiservice', {
+        url: '/biquhaiyiservice',
+        data: {
+            auth: false
+        },
+        views: {
+            'main@weixin': {
+                template: '<weixins-biqu-haiyiservice></weixins-biqu-haiyiservice>'
+            }
+        }
+    })
+
+    .state('weixin.biquhaiyierweima', {
+        url: '/biquhaiyierweima',
+        data: {
+            auth: false
+        },
+        views: {
+            'main@weixin': {
+                template: '<weixins-biqu-haiyierweima></weixins-biqu-haiyierweima>'
+            }
+        }
+    })
 }
